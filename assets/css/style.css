@@ -1,0 +1,183 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url('../images/pit.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Gamja Flower', cursive;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#chosenCharacters,
+#defender,
+#fight,
+.infoSection,
+.infoSectionTop,
+.centerLine,
+.result {
+  justify-content: center;
+}
+
+.arena {
+  width: 80%;
+  height: 99.5%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+
+#start {
+  width: 100%;
+  height: auto;
+}
+
+.usertLine,
+.defenderLine,
+.infoSection,
+.ready {
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerLine {
+  position: relative;
+  width: 50%;
+}
+
+.firstMessage {
+  position: absolute;
+  top: 8%;
+  text-align: center;
+}
+
+.firstMessage p {
+  color: #5c1023;
+  text-shadow: 0 0 2px #1e0008;
+  font-size: 3rem;
+}
+
+.infoSection,
+.infoSectionTop {
+  min-height: 3rem;
+  width: 25rem;
+  margin: .5rem 0;
+}
+
+.infoSectionTop {
+  margin: 2rem 0 9rem 0;
+}
+
+.box {
+  position: absolute;
+  top: 10%;
+  /* border: 1px solid green; */
+}
+
+.usertLine,
+.defenderLine {
+  width: 25%;
+  align-self: flex-end;
+}
+
+.availableCharactersOuter {
+  height: 14rem;
+}
+
+.character {
+  height: 14rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.character:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.character p,
+button {
+  font-family: 'Finger Paint', cursive;
+}
+
+.character p {
+  font-size: 1.1rem;
+}
+
+.character img {
+  width: auto;
+  height: 80%;
+}
+
+.healthBar {
+  /* height: .4rem;*/
+  display: none;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: .5rem;
+}
+
+.innerHealthbar {
+  border-left: .5px solid black;
+  border-right: .5px solid black;
+  width: .3rem;
+  height: .3rem;
+  /* background-color: darkgreen; */
+}
+
+#chosenCharacter .character,
+#defender .character {
+  height: 22rem;
+}
+
+button {
+  width: 15rem;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  display: none;
+}
+
+#fight button {
+  margin-top: .5rem;
+  background-color: #ff1f1f;
+  box-shadow: 0 0 10px 2px #ae0000;
+}
+
+#fight button:active {
+  box-shadow: 0 0 9px 3px #ae0000;
+}
+
+#reset {
+  margin-top: .5rem;
+  background-color: #a164cd;
+  box-shadow: 0 0 10px 2px #873fbb;
+}
+
+#reset:active {
+  box-shadow: 0 0 9px 3px #873fbb;
+}
+
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  html {
+    font-size: 12px;
+  }
+}

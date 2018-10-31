@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8">
+  <title>South Park RPG</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Gamja+Flower" rel="stylesheet">
 </head>
+
 <body>
-    
+  <div class="arena flex">
+
+    <!-- Player -->
+    <div class="usertLine flex">
+      <div id="chosenCharacter" class="flex"></div>
+    </div>
+
+    <!-- Main stage -->
+    <div class="centerLine flex">
+      <div class="firstMessage">
+        <p>Choose your player to start the epic fight!</p>
+      </div>
+      <div class="box">
+        <div class="infoSectionTop flex">
+          <p id="fightInfo"></p>
+        </div>
+
+        <!-- Character player can choose -->
+        <div class="availableCharactersOuter">
+          <div id="availableCharacters" class="flex">
+            <div class="character player" number="fourth" value="Eric">
+              <p>Eric</p>
+              <p><span class="points">180</span></p>
+              <div class="healthBar"></div>
+              <img src="./assets/images/cartman.png" alt="Eric Cartman">
+            </div>
+            <div class="character player" number="third" value="Stan">
+              <p>Stan</p>
+              <p><span class="points ">150</span></p>
+              <div class="healthBar"></div>
+              <img src="./assets/images/stan.png" alt="Stan Marsh">
+            </div>
+            <div class="character player" number="second" value="Kyle">
+              <p>Kyle</p>
+              <p><span class="points">100</span></p>
+              <div class="healthBar"></div>
+              <img src="./assets/images/kyle.png" alt="Kyle Broflovski">
+            </div>
+            <div class="character player" number="first" value="Kenny">
+              <p>Kenny</p>
+              <p><span class="points">120</span></p>
+              <div class="healthBar"></div>
+              <img src="./assets/images/kenny.png" alt="Kenny McCormick">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="fight" class="flex">
+          <button type="button" name="fight" id="attack">Fight</button>
+        </div>
+
+        <div class="infoSection flex result">
+          <p id="message"></p>
+          <button type="button" name="Reset" id="reset">Reset</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Defender -->
+    <div class="defenderLine flex">
+      <div id="defender"></div>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
