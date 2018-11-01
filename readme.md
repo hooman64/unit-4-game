@@ -1,4 +1,4 @@
-jQuery Assignment
+# jQuery Assignment
 
 This is just like mortal combat except:
 
